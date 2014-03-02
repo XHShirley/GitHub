@@ -10,7 +10,7 @@
 import java.util.Random;
 import java.lang.Math;
 
-public class AlgoSimulation extends Algorithm implements Side {
+public class AlgoSimulation extends Algorithm {
 	
 	ParaOfSimulation paraSim;
 	Boolean side;
@@ -58,16 +58,16 @@ public class AlgoSimulation extends Algorithm implements Side {
 		
 	}
 
-	@Override
-	public double put() {
-		this.side=false;
-		return calculate();
-	}
-
-	@Override
-	public double call() {
-		this.side=true;
-		return calculate();
-	}
+//	@Override
+//	public double put() {
+//		this.side=false;
+//		return calculate();
+//	}
+//
+//	@Override
+//	public double call() {
+//		this.side=true;
+//		return calculate();
+//	}
 
 }

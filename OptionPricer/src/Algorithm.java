@@ -8,7 +8,7 @@
  * 1/3/2014
  *
  */
-public abstract class Algorithm implements Side{
+public abstract class Algorithm {
 	
 	Parameter para;
 

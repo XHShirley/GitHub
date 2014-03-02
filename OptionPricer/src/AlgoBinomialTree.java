@@ -6,7 +6,7 @@
  * @author Shirley Yang
  *
  */
-public class AlgoBinomialTree extends Algorithm implements Side{
+public class AlgoBinomialTree extends Algorithm {
 	
 	ParaOfBinomial paraOfB;
 	double deltaT;
@@ -88,16 +88,16 @@ public class AlgoBinomialTree extends Algorithm implements Side{
 
 	}
 	
-	@Override
-	public double put() {
-		this.side=false;
-		return calculate();
-	}
-
-	@Override
-	public double call() {
-		this.side=true;
-		return calculate();
-	}
+//	@Override
+//	public double put() {
+//		this.side=false;
+//		return calculate();
+//	}
+//
+//	@Override
+//	public double call() {
+//		this.side=true;
+//		return calculate();
+//	}
 }
 
