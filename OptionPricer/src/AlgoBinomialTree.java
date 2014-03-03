@@ -70,9 +70,9 @@ public class AlgoBinomialTree extends Algorithm {
 		{
 			for (j = 0; j <= i; j++)
 			{
-				if(side==false)
+				if(side==false)  // put option
 					binomialTree[i][j].optionPrice = Math.max(paraOfB.getStrikePrice() - binomialTree[i][j].stockPrice, discount * (upProb * binomialTree[i + 1][j + 1].optionPrice + downProb * binomialTree[i + 1][j].optionPrice));
-				else
+				else  // call option
 					binomialTree[i][j].optionPrice = Math.max(binomialTree[i][j].stockPrice - paraOfB.getStrikePrice(), discount * (upProb * binomialTree[i + 1][j + 1].optionPrice + downProb * binomialTree[i + 1][j].optionPrice));
 			}
 		}
